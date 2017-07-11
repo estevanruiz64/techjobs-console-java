@@ -65,13 +65,13 @@ public class JobData {
      * param value Value of the field to search for
      * return List of all jobs matching the criteria
      */
-
+    /** this will print all the jobs based upon any matching field to the string value **/
     public static ArrayList<HashMap<String, String>> findByValue(String value) {
 
         loadData();
 
         ArrayList<HashMap<String, String>> jobs = new ArrayList<>();
-
+        /** matching the string to the job **/
         for (HashMap<String, String> row : allJobs){
             for (String headings : row.keySet()){
                 String jobValue = row.get(headings);

@@ -109,12 +109,14 @@ public class TechJobs {
         return choiceKeys[choiceIdx];
     }
 
-    // Print a list of jobs
+    // Prints a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
         if (someJobs.size() > 0){
+            //looping through the hashmaps
             for (HashMap<String,String> jobs : someJobs){
                 System.out.println("*****");
+                //looping through the jobs within the hashmaps and printing them
                 for (String headings : jobs.keySet()) {
                     String jobValue = jobs.get(headings);
                     System.out.println(headings + ": " + jobValue);
