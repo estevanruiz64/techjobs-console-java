@@ -71,7 +71,7 @@ public class JobData {
         loadData();
 
         ArrayList<HashMap<String, String>> jobs = new ArrayList<>();
-        /** matching the string to the job **/
+        //matching the string to the job
         for (HashMap<String, String> row : allJobs){
             for (String headings : row.keySet()){
                 String jobValue = row.get(headings);

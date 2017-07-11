@@ -116,7 +116,7 @@ public class TechJobs {
             //looping through the hashmaps
             for (HashMap<String,String> jobs : someJobs){
                 System.out.println("*****");
-                //looping through the jobs within the hashmaps and printing them
+                /**looping through the jobs within the hashmaps and printing them**/
                 for (String headings : jobs.keySet()) {
                     String jobValue = jobs.get(headings);
                     System.out.println(headings + ": " + jobValue);
